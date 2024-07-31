@@ -7,8 +7,8 @@ export class Order {
   orderId: number;
 
   @ManyToMany(() => Product, (product) => product.orders)
-  products: Product[];
-  
+  products: Product[]; 
+
   @Column()
   totalPrice: number;
 }
